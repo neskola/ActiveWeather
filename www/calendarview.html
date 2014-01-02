@@ -14,13 +14,13 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/jquery-1.10.2.min"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="../js/angular-1.2.6.min.js"></script>
 	
 	<!-- local scripts -->
 	<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="../js/todo.js"></script>
+	<script src="../js/data.js"></script>
   
   </head>
   <body>
@@ -73,16 +73,12 @@
     <strong>Warning!</strong> Contents are fixed and for testing purposes only.
   </div>
   
-  <div class="row">
-     <div class="col-sm-4" title="Tooltip text">Info box 1</div>
-     <div class="col-sm-4">Info box 2</div>
-	 <div class="col-sm-4">Info box 3</div>
+  <div class="row" id="calendar" ng-controller="CalendarDataCtrl">
+     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}}</div>
   </div>
 
-  <div class="row">
-     <div class="col-sm-4" title="Tooltip text">Weather box 1</div>
-     <div class="col-sm-4">Weather box 2</div>
-	 <div class="col-sm-4">Weather box 3</div>
+  <div class="row" id="weather" ng-controller="WeatherDataCtrl">
+     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}}</div>
   </div>
   
 </div>
