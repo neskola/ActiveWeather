@@ -73,12 +73,12 @@
     <strong>Warning!</strong> Contents are fixed and for testing purposes only.
   </div>
   
-  <div class="row" id="calendar" ng-controller="CalendarDataCtrl">
-     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}}</div>
+  <div class="row well" ng-controller="CalendarDataCtrl">
+     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}} <span class="badge">{{entry.min}}</span></div>
   </div>
 
-  <div class="row" id="weather" ng-controller="WeatherDataCtrl">
-     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}}</div>
+  <div class="row well" ng-controller="WeatherDataCtrl">
+     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}} <span class="badge">{{entry.temp}}</span></div>
   </div>
   
 </div>
