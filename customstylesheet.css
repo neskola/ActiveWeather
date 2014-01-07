@@ -1,0 +1,9 @@
+﻿   
+#temperatureslider {
+    width: 400px;
+}
+#temperaturediv, #selectdays, #selectdaytext, #selecttemperaturetext, #updatecalendarbtn {
+    margin-left: 20px;
+}
+
+
