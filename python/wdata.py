@@ -34,14 +34,16 @@ def main(argv):
 
 	complete_query = "/fmi-apikey/" + api_key + query + place + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ")
 
-	print(complete_query);
+	
 
 	if inputfile == '':	
+		print("Connecting to: " + complete_query);
 		response = urllib.request.urlopen("http://data.fmi.fi" + complete_query)
 		print (response.status, response.reason)
 		xml = response.read()
 		xml_root = ET.fromstring(xml)
 	else:
+		print("Reading xml file: " + inputfile)
 		xml_root = ET.parse(inputfile)
 				
 		
@@ -52,12 +54,16 @@ def calculateEndtime():
 	tmp_date = tmp_date + timedelta(hours=48)	
 	return datetime(tmp_date.year, tmp_date.month, tmp_date.day, tmp_date.hour, 0,0)
 	
-def parseXMLtoJSON(xml_root):
-	print(xml_root)
-	namespace = "{http://www.opengis.net/gml/3.2}"
-	beginPosition = xml_root.find('.//{0}beginPosition'.format(namespace))
-	endPosition = xml_root.find('.//{0}endPosition'.format(namespace))
+def parseXMLtoJSON(xml_root):	
+	gml_namespace = "{http://www.opengis.net/gml/3.2}"
+	wml2_namespace = "{http://www.opengis.net/waterml/2.0}"
+	beginPosition = xml_root.find('.//{0}beginPosition'.format(gml_namespace))
+	endPosition = xml_root.find('.//{0}endPosition'.format(gml_namespace))
 	print ("Report dates:" + beginPosition.text, "to " + endPosition.text)
+	
+	measurements = xml_root.findall(".//{0}MeasurementTimeseries".format(wml2_namespace))
+	for measurement in measurements:
+		print (measurement.attrib)
 	
 	
 if __name__ == "__main__":
