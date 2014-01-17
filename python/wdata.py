@@ -54,8 +54,11 @@ def calculateEndtime():
 	
 def parseXMLtoJSON(xml_root):
 	print(xml_root)
-	foo = xml_root.findall('.//beginPosition')
-	print (foo)
+	namespace = "{http://www.opengis.net/gml/3.2}"
+	beginPosition = xml_root.find('.//{0}beginPosition'.format(namespace))
+	endPosition = xml_root.find('.//{0}endPosition'.format(namespace))
+	print ("Report dates:" + beginPosition.text, "to " + endPosition.text)
+	
 	
 if __name__ == "__main__":
 	main(sys.argv[1:])
