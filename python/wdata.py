@@ -14,32 +14,37 @@ wml2_namespace = "{http://www.opengis.net/waterml/2.0}"
 # some static values
 api_key = "8a861995-5bad-4fea-85e8-7cccd6860bb2"
 query = "/wfs?request=getFeature&storedquery_id=fmi::forecast::hirlam::surface::point::timevaluepair&place="
-place = "porvoo"
+place = "Porvoo"
+geoid = ''
 timestep = 60
 
+weather_table = dict()
 
 def main(argv):
 
 	inputfile = ""
 	try:
-		opts, args = getopt.getopt(argv,"hf:", ["file="])
+		opts, args = getopt.getopt(argv,"hf:p:g:", ["file=", "place=", "geoid="])
 	except getopt.GetoptError:
-		print ("wdata.py -file <xml_file>")
+		print ("wdata.py -file <xml_file> -p <place>")
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
 			print ("wdata.py -file <xml_file>")
 			sys.exit()
-		elif opt in ("-f", "--file"):
+		elif opt in ("-f", "--file"):			
 			inputfile = arg
+			print ("Using " + inputfile + " as input file.")
+		elif opt in ("-p", "--place"):			
+			place = arg
+			print ("Using " + place + " as place parameter.")
+		elif opt in ("-g", "--geoid"):
+			goeid = arg
+			print ("Using " + geoid + " as geoid parameter.")
 	
-	print (inputfile)		
-
 	end_time = calculateEndtime()
 
 	complete_query = "/fmi-apikey/" + api_key + query + place + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ")
-
-	
 
 	if inputfile == '':	
 		print("Connecting to: " + complete_query);
@@ -82,13 +87,22 @@ def parseXMLtoJSON(xml_root):
 		if m_id == 'mts-1-1-PrecipitationAmount':
 			printMeasurementTVPs(measurement, "precipitation :")
 		
-			
+	for item in weather_table.items():
+		print(item) # we are almost there :)
+
 def printMeasurementTVPs(measurement, type):
 	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
 	for tvp in tvps:
 		time = tvp.find("./{0}time".format(wml2_namespace))
 		value = tvp.find("./{0}value".format(wml2_namespace))
 		print (type, time.text, value.text)
+		if time.text in weather_table:
+			value_table = weather_table[time.text]
+			value_table['date'] = time.text
+			value_table[type] = value.text
+		else:
+			value_table = dict(type=value.text)
+			weather_table[time.text] = value_table	
 					
 if __name__ == "__main__":
 	main(sys.argv[1:])
