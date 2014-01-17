@@ -1,155 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wfs:FeatureCollection
-    timeStamp="2014-01-16T05:01:22Z"
-    numberMatched="2"
-    numberReturned="2"
-           xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:om="http://www.opengis.net/om/2.0"
-        xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/2.0rc3"
-        xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/2.0rc3"
-        xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd="http://www.isotc211.org/2005/gmd"
-        xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:swe="http://www.opengis.net/swe/2.0"
-        xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
-        xmlns:sam="http://www.opengis.net/sampling/2.0"
-        xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
-        xmlns:wml2="http://www.opengis.net/waterml/2.0"
-	xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95"
-        xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
-        http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
-        http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
-        http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
-        http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
-        http://inspire.ec.europa.eu/schemas/ompr/2.0rc3 http://inspire.ec.europa.eu/draft-schemas/ompr/2.0rc3/Processes.xsd
-        http://inspire.ec.europa.eu/schemas/omso/2.0rc3 http://inspire.ec.europa.eu/draft-schemas/omso/2.0rc3/SpecialisedObservations.xsd
-        http://www.opengis.net/waterml/2.0 http://inspire.ec.europa.eu/draft-schemas/waterml/2.0rfc/waterml2.xsd
-        http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95 http://xml.fmi.fi/schema/om/atmosphericfeatures/0.95/atmosphericfeatures.xsd">
-   
-	    <wfs:member>
-                <omso:PointTimeSeriesObservation gml:id="WFS-7J_ShIB2WQ2hwRB1wNype24sqjOJTowqYWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6ddNO3L2w7OuXhh08oWliy59O6pp25bX30KFe2ddwmNj5c61ItCnHdOmjJq4Z2XdkqaduW199ChYNmmJnZtunnpyc6zGLBiwZOGZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNLbh8ReG_Ho5zgxzN7bl6Zd9DDyw7cvTLy51rd9O7Jz4ZcuTbza23Tz56d2epl8dKxp2Gc2t3XbPzU.mHpp37uc4TW59MPTTv3VPPDLWhv4Zd2TD0wtzn038suTj1y8vN_TkrTCzbdLp1vxc8vLth6ad.7m6dd8uHpoy8nTrpp25e2HZ1y8MOnk0Omnblp9MvCfkJodNO3La37stY1WpDA--">
+    timeStamp="2014-01-17T06:12:56Z"
+    numberMatched="21"
+    numberReturned="21"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:om="http://www.opengis.net/om/2.0"
+    xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/2.0rc3"
+    xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/2.0rc3"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+    xmlns:sam="http://www.opengis.net/sampling/2.0"
+    xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+    xmlns:wml2="http://www.opengis.net/waterml/2.0"
+    xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95"
+    xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+    http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+    http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+    http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+    http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+    http://inspire.ec.europa.eu/schemas/omso/2.0rc3 http://inspire.ec.europa.eu/draft-schemas/omso/2.0rc3/SpecialisedObservations.xsd
+    http://inspire.ec.europa.eu/schemas/ompr/2.0rc3 http://inspire.ec.europa.eu/draft-schemas/ompr/2.0rc3/Processes.xsd
+    http://www.opengis.net/waterml/2.0 http://inspire.ec.europa.eu/draft-schemas/waterml/2.0rfc/waterml2.xsd
+    http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95 http://xml.fmi.fi/schema/om/atmosphericfeatures/0.95/atmosphericfeatures.xsd">
 
-		            <om:phenomenonTime>
-        <gml:TimePeriod  gml:id="time1-1-1-windspeedms">
-          <gml:beginPosition>2014-01-15T17:01:00Z</gml:beginPosition>
-          <gml:endPosition>2014-01-16T05:01:00Z</gml:endPosition>
-        </gml:TimePeriod>
-      </om:phenomenonTime>
-      <om:resultTime>
-        <gml:TimeInstant gml:id="time2-1-1-windspeedms">
-          <gml:timePosition>2014-01-16T05:01:00Z</gml:timePosition>
-        </gml:TimeInstant>
-      </om:resultTime>      
+    
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-_69y4mMyrHVYkkBHc2W0j5q2CaaJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tSPl38JGXTn0dG5z6b.WXJx65eXm_pyV0hZtul06zb.WXHh59HTrRp5bMO10659eWbDjyunXDfp3dHTrpp25e2HZ1y8MOnk0Omnblp9MvCdFZodNO3La37stY1WpDA--GeopHeight">
+	                     <om:phenomenonTime>
+                <gml:TimePeriod gml:id="time-interval-1-1">
+                    <gml:beginPosition>2014-01-17T12:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2014-01-19T06:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time-1-1">
+                    <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime> 
 
-		<om:procedure xlink:href="http://xml.fmi.fi/inspire/process/opendata"/>
-   		            <om:parameter>
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
                 <om:NamedValue>
-                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
                     <om:value>
-			atmoshphere
+                        <gml:TimeInstant gml:id="analysis-time-1-1-GeopHeight--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
                     </om:value>
                 </om:NamedValue>
             </om:parameter>
 
-                <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=observation&amp;param=windspeedms&amp;language=eng"/>
-				<om:featureOfInterest>
-                    <sams:SF_SpatialSamplingFeature gml:id="fi-1-1-windspeedms">
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=GeopHeight&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-GeopHeight">
           <sam:sampledFeature>
-		<target:LocationCollection gml:id="sampled-target-1-1-windspeedms">
+		<target:LocationCollection gml:id="sampled-target-1-1-GeopHeight">
 		    <target:member>
-		    <target:Location gml:id="obsloc-fmisid-101028-pos-windspeedms">
-		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101028</gml:identifier>
-			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Porvoo Harabacka</gml:name>
-			
-			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2759</gml:name>
-			<target:representativePoint xlink:href="#point-101028"/>						   			
-			
-			
-			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Porvoo</target:region>
-			
+		    <target:Location gml:id="forloc-geoid-658225-pos-GeopHeight">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-GeopHeight"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
 		    </target:Location></target:member>
 		</target:LocationCollection>
  	   </sam:sampledFeature>
-                        <sams:shape>
-                            
-			    <gml:Point gml:id="point-1-1-windspeedms" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
-                                <gml:name>Porvoo Harabacka</gml:name>
-                                <gml:pos>60.39158 25.60823 </gml:pos>
-                            </gml:Point>
-                            
-                        </sams:shape>
-                    </sams:SF_SpatialSamplingFeature>
-                </om:featureOfInterest>
-		                <om:result>
-                    <wml2:MeasurementTimeseries gml:id="obs-obs-1-1-windspeedms">                         
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-GeopHeight">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-GeopHeight" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-GeopHeight">  
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T18:00:00Z</wml2:time>
-				      <wml2:value>2.8</wml2:value> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T19:00:00Z</wml2:time>
-				      <wml2:value>2.9</wml2:value> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T20:00:00Z</wml2:time>
-				      <wml2:value>3.2</wml2:value> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T21:00:00Z</wml2:time>
-				      <wml2:value>4.6</wml2:value> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T22:00:00Z</wml2:time>
-				      <wml2:value>3.4</wml2:value> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T23:00:00Z</wml2:time>
-				      <wml2:value>3.1</wml2:value> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T00:00:00Z</wml2:time>
-				      <wml2:value>3.5</wml2:value> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T01:00:00Z</wml2:time>
-				      <wml2:value>3.8</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T02:00:00Z</wml2:time>
-				      <wml2:value>4.2</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T03:00:00Z</wml2:time>
-				      <wml2:value>4.0</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T04:00:00Z</wml2:time>
-				      <wml2:value>4.2</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T05:00:00Z</wml2:time>
-				      <wml2:value>4.2</wml2:value> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                         
                     </wml2:MeasurementTimeseries>
@@ -157,124 +139,102 @@
 
         </omso:PointTimeSeriesObservation>
     </wfs:member>
-	    <wfs:member>
-                <omso:PointTimeSeriesObservation gml:id="WFS-B1aqfsP.JO0mxraTJtyVdMGvWUeJTowqYWbbpdOt.Lnl5dsPTTv3c3Trvlw9NGXk6ddNO3L2w7OuXhh08oWliy59O6pp25bX30KFe2ddwmNj5c61ItCnHdOmjJq4Z2XdkqaduW199ChYNmmJnZtunnpyc6zGLBiwZOGZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNLbh8ReG_Ho5zgxzN7bl6Zd9DDyw7cvTLy51rdMu3hl5YenXlla23Tz56d2epl8dKxp2Gc2t3XbPzU.mHpp37uc4TW59MPTTv3VPPDLWhv4Zd2TD0wtzn038suTj1y8vN_TkrTCzbdLp1vxc8vLth6ad.7m6dd8uHpoy8nTrpp25e2HZ1y8MOnk0Omnblp9MvCfkJodNO3La37stY1WpDA--">
 
-		      
-      <om:phenomenonTime xlink:href="#"/>
-      <om:resultTime xlink:href="#"/>      
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-3vAkq4tcM0K0.uGhQ6ZV4ge.0IWJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tapl28MvLD068src59N_LLk49cvLzf05K6Qs23S6dZt_LLjw8.jp1o08tmHa6dc.vLNhx5XTrhv07ujp1007cvbDs65eGHTyaHTTty0.mXhOis0Omnbltb92WsarUhg-Temperature">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
 
-		<om:procedure xlink:href="http://xml.fmi.fi/inspire/process/opendata"/>
-   		            <om:parameter>
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
                 <om:NamedValue>
-                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/groundObservation/observationIntent"/>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
                     <om:value>
-			atmoshphere
+                        <gml:TimeInstant gml:id="analysis-time-1-1-Temperature--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
                     </om:value>
                 </om:NamedValue>
             </om:parameter>
 
-                <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=observation&amp;param=temperature&amp;language=eng"/>
-				<om:featureOfInterest>
-                    <sams:SF_SpatialSamplingFeature gml:id="fi-1-1-temperature">
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=Temperature&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-Temperature">
           <sam:sampledFeature>
-		<target:LocationCollection gml:id="sampled-target-1-1-temperature">
+		<target:LocationCollection gml:id="sampled-target-1-1-Temperature">
 		    <target:member>
-		    <target:Location gml:id="obsloc-fmisid-101028-pos-temperature">
-		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/fmisid">101028</gml:identifier>
-			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Porvoo Harabacka</gml:name>
-			
-			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/wmo">2759</gml:name>
-			<target:representativePoint xlink:href="#point-101028"/>						   			
-			
-			
-			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Porvoo</target:region>
-			
+		    <target:Location gml:id="forloc-geoid-658225-pos-Temperature">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-Temperature"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
 		    </target:Location></target:member>
 		</target:LocationCollection>
  	   </sam:sampledFeature>
-                        <sams:shape>
-                            
-			    <gml:Point gml:id="point-1-1-temperature" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
-                                <gml:name>Porvoo Harabacka</gml:name>
-                                <gml:pos>60.39158 25.60823 </gml:pos>
-                            </gml:Point>
-                            
-                        </sams:shape>
-                    </sams:SF_SpatialSamplingFeature>
-                </om:featureOfInterest>
-		                <om:result>
-                    <wml2:MeasurementTimeseries gml:id="obs-obs-1-1-temperature">                         
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-Temperature">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-Temperature" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-Temperature">  
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T18:00:00Z</wml2:time>
-				      <wml2:value>-10.2</wml2:value> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>-10.34</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T19:00:00Z</wml2:time>
-				      <wml2:value>-10.2</wml2:value> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>-10.37</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T20:00:00Z</wml2:time>
-				      <wml2:value>-10.5</wml2:value> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>-12.54</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T21:00:00Z</wml2:time>
-				      <wml2:value>-9.7</wml2:value> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>-10.6</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T22:00:00Z</wml2:time>
-				      <wml2:value>-10.8</wml2:value> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>-10.02</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-15T23:00:00Z</wml2:time>
-				      <wml2:value>-12.2</wml2:value> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>-10.91</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T00:00:00Z</wml2:time>
-				      <wml2:value>-12.9</wml2:value> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>-12.67</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                          
                         <wml2:point>
                             <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T01:00:00Z</wml2:time>
-				      <wml2:value>-14.1</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T02:00:00Z</wml2:time>
-				      <wml2:value>-14.0</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T03:00:00Z</wml2:time>
-				      <wml2:value>-14.3</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T04:00:00Z</wml2:time>
-				      <wml2:value>-14.5</wml2:value> 
-                            </wml2:MeasurementTVP>
-                        </wml2:point>                          
-                        <wml2:point>
-                            <wml2:MeasurementTVP> 
-                                      <wml2:time>2014-01-16T05:00:00Z</wml2:time>
-				      <wml2:value>-14.3</wml2:value> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>-13.4</wml2:value> 
                             </wml2:MeasurementTVP>
                         </wml2:point>                         
                     </wml2:MeasurementTimeseries>
@@ -282,4 +242,1962 @@
 
         </omso:PointTimeSeriesObservation>
     </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-vIbCdnVzBjcUWDecC_yuAATXRomJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tChyy8.fXllbnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakM-Pressure">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-Pressure--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=Pressure&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-Pressure">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-Pressure">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-Pressure">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-Pressure"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-Pressure">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-Pressure" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-Pressure">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>1023.58</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>1023.87</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>1024.61</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>1025.08</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>1027.4</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>1030.13</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>1032.31</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>1033.92</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-MS2ud7ixv7aDkMJZBEFVayyXVQ6JTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tCR126cmnp5bnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakM-Humidity">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-Humidity--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=Humidity&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-Humidity">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-Humidity">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-Humidity">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-Humidity"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-Humidity">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-Humidity" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-Humidity">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>82.34</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>84.88</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>88.02</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>86.25</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>81.02</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>85.26</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>86.39</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>92.23</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-LoXSTWTMnXSBINYuZdxsOwCLruKJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tqvp3ZImnllx9NO_c3OfTfyy5OPXLy839OSukLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6ddNO3L2w7OuXhh08mh007ctPpl4TorNDpp25bW_dlrGq1IYA--WindDirection">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WindDirection--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WindDirection&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WindDirection">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WindDirection">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WindDirection">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WindDirection"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WindDirection">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WindDirection" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WindDirection">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>30.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>40.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>30.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>40.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>40.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>40.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>30.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>30.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-gWhIppE36Udi_FPNWg4sJsd1IgmJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tavp3ZKfDLlyTabc59N_LLk49cvLzf05K6Qs23S6dZt_LLjw8.jp1o08tmHa6dc.vLNhx5XTrhv07ujp1007cvbDs65eGHTyaHTTty0.mXhOis0Omnbltb92WsarUhg-WindSpeedMS">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WindSpeedMS--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WindSpeedMS&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WindSpeedMS">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WindSpeedMS">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WindSpeedMS">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WindSpeedMS"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WindSpeedMS">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WindSpeedMS" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WindSpeedMS">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>5.51</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>6.29</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>6.48</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>6.95</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>5.97</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>5.72</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>4.99</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>4.77</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-oF78lOoO7JT2r7cqfpZDhRPm.bKJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2s6vp3ZKs2m3OfTfyy5OPXLy839OSukLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6ddNO3L2w7OuXhh08mh007ctPpl4TorNDpp25bW_dlrGq1IYA-WindUMS">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WindUMS--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WindUMS&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WindUMS">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WindUMS">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WindUMS">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WindUMS"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WindUMS">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WindUMS" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WindUMS">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>-1.12</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>-1.72</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>-1.03</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>-1.6</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>-1.93</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>-1.69</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>-0.51</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>-0.18</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-mNa0K3.m9OBw34h4EFbhZd.RaqaJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2s6vp3ZK02m3OfTfyy5OPXLy839OSukLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6ddNO3L2w7OuXhh08mh007ctPpl4TorNDpp25bW_dlrGq1IYA-WindVMS">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WindVMS--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WindVMS&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WindVMS">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WindVMS">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WindVMS">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WindVMS"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WindVMS">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WindVMS" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WindVMS">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>-5.39</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>-6.05</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>-6.39</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>-6.76</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>-5.64</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>-5.46</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>-4.96</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>-4.75</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-sV4U3F_wlRz4zSYq3KSfSBUfxb.JTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tabh8advXbX07sjc59N_LLk49cvLzf05K6Qs23S6dZt_LLjw8.jp1o08tmHa6dc.vLNhx5XTrhv07ujp1007cvbDs65eGHTyaHTTty0.mXhOis0Omnbltb92WsarUhg-MaximumWind">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-MaximumWind--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=MaximumWind&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-MaximumWind">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-MaximumWind">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-MaximumWind">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-MaximumWind"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-MaximumWind">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-MaximumWind" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-MaximumWind">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>6.15</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>7.02</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>6.8</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>6.97</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>7.03</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>7.03</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>5.84</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>5.84</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-eEhzB_XCEMDpzbA5yxpU3XqsZtSJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tCvp3ZI_Xn0bnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakM-WindGust">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WindGust--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WindGust&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WindGust">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WindGust">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WindGust">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WindGust"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WindGust">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WindGust" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WindGust">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>8.64</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>9.78</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>9.88</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>10.63</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>9.47</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>9.17</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>7.86</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>7.5</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-Vobbg9P1Vw4BmK6SZXIZC4mbCWiJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tCJl70N.nd0bnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakM-DewPoint">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-DewPoint--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=DewPoint&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-DewPoint">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-DewPoint">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-DewPoint">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-DewPoint"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-DewPoint">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-DewPoint" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-DewPoint">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>-12.75</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>-12.45</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>-14.08</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>-12.43</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>-12.69</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>-12.89</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>-14.48</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>-14.38</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-rmtvtYwYIJ7w1F0mtGgvvKhe.veJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2t6pv6YdkPZv65Ie_tl5Nzn038suTj1y8vN_TkrpCzbdLp1m38suPDz6OnWjTy2Ydrp1z68s2HHldOuG_Tu6OnXTTty9sOzrl4YdPJodNO3LT6ZeE6KzQ6aduW1v3ZaxqtSGAA---TotalCloudCover">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-TotalCloudCover--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=TotalCloudCover&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-TotalCloudCover">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-TotalCloudCover">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-TotalCloudCover">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-TotalCloudCover"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-TotalCloudCover">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-TotalCloudCover" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-TotalCloudCover">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>92.36</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>100.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>93.93</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>87.24</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>88.89</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>31.07</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>11.47</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>6.97</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-tm9cn5NhcBIhxk4Gq2HrglHw_DmJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tyvlw9NGXlT87cW_YzbnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakMA-WeatherSymbol3">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-WeatherSymbol3--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=WeatherSymbol3&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-WeatherSymbol3">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-WeatherSymbol3">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-WeatherSymbol3">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-WeatherSymbol3"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-WeatherSymbol3">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-WeatherSymbol3" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-WeatherSymbol3">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>2.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>NaN</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-Sb.tm311QmC2Xtc1KYJRydRcddCJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tqZv7w9m_rkh7.2Xk3OfTfyy5OPXLy839OSukLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6ddNO3L2w7OuXhh08mh007ctPpl4TorNDpp25bW_dlrGq1IYA--LowCloudCover">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-LowCloudCover--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=LowCloudCover&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-LowCloudCover">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-LowCloudCover">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-LowCloudCover">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-LowCloudCover"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-LowCloudCover">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-LowCloudCover" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-LowCloudCover">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>94.8</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>99.9</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>95.3</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>83.5</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>88.6</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>29.1</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>11.3</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>13.7</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-sylviJJAY81PejSqDbf1JDWeIjaJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2uCblyaeu2Hs39ckPf2y8m5z6b.WXJx65eXm_pyV0hZtul06zb.WXHh59HTrRp5bMO10659eWbDjyunXDfp3dHTrpp25e2HZ1y8MOnk0Omnblp9MvCdFZodNO3La37stY1WpDA---MediumCloudCover">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-MediumCloudCover--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=MediumCloudCover&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-MediumCloudCover">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-MediumCloudCover">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-MediumCloudCover">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-MediumCloudCover"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-MediumCloudCover">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-MediumCloudCover" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-MediumCloudCover">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-qo9oJdoMy3VDnHts7.Cqx_17SKaJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2tyRpz6Iezf1yQ9_bLybnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakMA-HighCloudCover">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-HighCloudCover--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=HighCloudCover&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-HighCloudCover">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-HighCloudCover">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-HighCloudCover">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-HighCloudCover"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-HighCloudCover">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-HighCloudCover" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-HighCloudCover">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-r7ZXi2AZTQZS_3eXMdLihbAKBXGJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2t6hyy49PDT0w9NO_cx0Nzn038suTj1y8vN_TkrpCzbdLp1m38suPDz6OnWjTy2Ydrp1z68s2HHldOuG_Tu6OnXTTty9sOzrl4YdPJodNO3LT6ZeE6KzQ6aduW1v3ZaxqtSGAA---Precipitation1h">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-Precipitation1h--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=Precipitation1h&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-Precipitation1h">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-Precipitation1h">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-Precipitation1h">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-Precipitation1h"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-Precipitation1h">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-Precipitation1h" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-Precipitation1h">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-0uGvu3ByebtglViSiaKImUhJYrSJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2uahyy49PDT0w9NO_dB27.u7o3OfTfyy5OPXLy839OSukLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6ddNO3L2w7OuXhh08mh007ctPpl4TorNDpp25bW_dlrGq1IYA---PrecipitationAmount">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-PrecipitationAmount--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=PrecipitationAmount&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-PrecipitationAmount">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-PrecipitationAmount">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-PrecipitationAmount">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-PrecipitationAmount"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-PrecipitationAmount">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-PrecipitationAmount" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-PrecipitationAmount">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>0.1</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>0.1</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>0.1</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>0.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>0.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>0.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>0.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-fyGsE_Pv9iX635qMJLWwz1mzeUuJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2talhyacPTTv3TK7c59N_LLk49cvLzf05K6Qs23S6dZt_LLjw8.jp1o08tmHa6dc.vLNhx5XTrhv07ujp1007cvbDs65eGHTyaHTTty0.mXhOis0Omnbltb92WsarUhg-RadiationLW">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-RadiationLW--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=RadiationLW&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-RadiationLW">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-RadiationLW">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-RadiationLW">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-RadiationLW"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-RadiationLW">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-RadiationLW" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-RadiationLW">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>249.99</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>244.63</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>240.31</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>247.17</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>241.02</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>210.18</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>187.14</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>43530220.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-X9bL4dJlyx207sCJgqDQyo3cYtiJTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2t6lhyacPTTv3R9m_Fh2Nzn038suTj1y8vN_TkrpCzbdLp1m38suPDz6OnWjTy2Ydrp1z68s2HHldOuG_Tu6OnXTTty9sOzrl4YdPJodNO3LT6ZeE6KzQ6aduW1v3ZaxqtSGAA---RadiationGlobal">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-RadiationGlobal--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=RadiationGlobal&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-RadiationGlobal">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-RadiationGlobal">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-RadiationGlobal">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-RadiationGlobal"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-RadiationGlobal">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-RadiationGlobal" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-RadiationGlobal">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>37.28</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>43.72</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>0.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>1857956.88</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
+    <wfs:member>
+        <omso:PointTimeSeriesObservation gml:id="WFS-qUytJQaFwL30n3Q6aF4JPhTfdr.JTowtIWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R066aduXth2dcvDDp5QtLFlz6d1TTty2vvoULFo71MbHy51qRaFOO6dNGTVwzsu7JU07ctr76FCzYI9Tgzad2Sdlw8svPpWw7NOSQzM.Xfpyc6zGzVwyZNWlsy9suyp54ZamZs348OzLWpm0340ld16ZnDW24fETTz6Yd2PLStXQgNbbp589O7PUy.OlY07DOZW3fky7KzNGnlsw7WVww8sO2uilhyacPTTv3TsvSpv4Qem2ZXbnPpv5ZcnHrl5eb.nJXSFm26XTrNv5ZceHn0dOtGnlsw7XTrn15ZsOPK6dcN.nd0dOumnbl7YdnXLww6eTQ6aduWn0y8J0Vmh007ctrfuy1jVakMA--RadiationNetTopAtmLW">
+	        
+	    <om:phenomenonTime xlink:href="#time-interval-1-1"/>
+	    <om:resultTime xlink:href="#time-1-1"/>
+
+	    <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+	                <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1-RadiationNetTopAtmLW--"> 
+                            <gml:timePosition>2014-01-17T00:00:00Z</gml:timePosition> 
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+
+            <om:observedProperty  xlink:href="http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/meta?observableProperty=forecast&amp;param=RadiationNetTopAtmLW&amp;language=eng"/>
+	                <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-RadiationNetTopAtmLW">
+          <sam:sampledFeature>
+		<target:LocationCollection gml:id="sampled-target-1-1-RadiationNetTopAtmLW">
+		    <target:member>
+		    <target:Location gml:id="forloc-geoid-658225-pos-RadiationNetTopAtmLW">
+		        <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225</gml:identifier>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki</gml:name>
+			<gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225</gml:name>
+			<target:representativePoint xlink:href="#point-658225-RadiationNetTopAtmLW"/>
+			<target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Republic of Finland</target:country>
+			<target:timezone>Europe/Helsinki</target:timezone>
+			<target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Helsinki</target:region>	   			
+		    </target:Location></target:member>
+		</target:LocationCollection>
+ 	   </sam:sampledFeature>
+                <sams:shape>
+                    <gml:MultiPoint gml:id="foi-multipoint-1-1-RadiationNetTopAtmLW">
+                        <gml:pointMembers> 
+                           <gml:Point gml:id="point-658225-RadiationNetTopAtmLW" srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                               <gml:name>Helsinki</gml:name>
+                               <gml:pos>60.16950 24.93540 </gml:pos>
+                           </gml:Point>
+                        </gml:pointMembers>
+                    </gml:MultiPoint>
+                </sams:shape>
+            </sams:SF_SpatialSamplingFeature>
+        </om:featureOfInterest>
+                        <om:result>
+                    <wml2:MeasurementTimeseries gml:id="mts-1-1-RadiationNetTopAtmLW">  
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T12:00:00Z</wml2:time>
+				      <wml2:value>-183.9</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-17T18:00:00Z</wml2:time>
+				      <wml2:value>-193.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T00:00:00Z</wml2:time>
+				      <wml2:value>-191.6</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T06:00:00Z</wml2:time>
+				      <wml2:value>-191.2</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T12:00:00Z</wml2:time>
+				      <wml2:value>-192.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-18T18:00:00Z</wml2:time>
+				      <wml2:value>-204.3</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T00:00:00Z</wml2:time>
+				      <wml2:value>-215.7</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                          
+                        <wml2:point>
+                            <wml2:MeasurementTVP> 
+                                      <wml2:time>2014-01-19T06:00:00Z</wml2:time>
+				      <wml2:value>-38646320.0</wml2:value> 
+                            </wml2:MeasurementTVP>
+                        </wml2:point>                         
+                    </wml2:MeasurementTimeseries>
+                </om:result>
+
+        </omso:PointTimeSeriesObservation>
+    </wfs:member>
+
 </wfs:FeatureCollection>
