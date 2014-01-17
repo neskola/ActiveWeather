@@ -42,15 +42,20 @@ def main(argv):
 		xml = response.read()
 		xml_root = ET.fromstring(xml)
 	else:
-		tree = ET.parse(inputfile)
-		xml_root = tree.getroot()		
+		xml_root = ET.parse(inputfile)
+				
 		
-	print(xml_root)
+	parseXMLtoJSON(xml_root)
 
 def calculateEndtime():
 	tmp_date = datetime.today()
 	tmp_date = tmp_date + timedelta(hours=48)	
 	return datetime(tmp_date.year, tmp_date.month, tmp_date.day, tmp_date.hour, 0,0)
+	
+def parseXMLtoJSON(xml_root):
+	print(xml_root)
+	foo = xml_root.findall('.//beginPosition')
+	print (foo)
 	
 if __name__ == "__main__":
 	main(sys.argv[1:])
