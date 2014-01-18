@@ -20,7 +20,7 @@
 	
 	<!-- local scripts -->
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="js/todo.js"></script>
+	<script src="js/page.js"></script>
   
   </head>
   <body>
@@ -33,19 +33,19 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="http://www.ravaska.com/activeweather">Active Weather</a>
+    <a class="navbar-brand" href="#container" onclick="loadPage('index.html')">Active Weather</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-	  <li class="active"><a href="http://www.ravaska.com/activeweather">Home</a></li>
-      <li><a href="www/calendarview.html">View</a></li>
+	  <li class="active"><a href="#container" onclick="loadPage('index.html');">Home</a></li>
+      <li><a href="#container" onclick="loadPage('www/calendarview.html');">View</a></li>
       
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="www/slidertest.html">Slidertest</a></li>
+          <li><a href="#container" onclick="loadPage('www/slidertest.html');">Slidertest</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
           <li class="divider"></li>
@@ -63,7 +63,7 @@
     </form>
   </div><!-- /.navbar-collapse -->
 </nav>
-    <div>
+    <div id="container">
       <label>Name:</label>
       <input type="text" ng-model="yourName" placeholder="Enter a name here">
       <hr>
