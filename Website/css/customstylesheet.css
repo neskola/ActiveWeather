@@ -5,5 +5,39 @@
 #temperaturediv, #selectdays, #selectdaytext, #selecttemperaturetext, #updatecalendarbtn {
     margin-left: 20px;
 }
-
+.circlered {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    width: 68px; height: 68px;
+    border-radius: 50%;
+    background: red;
+}
+.circleyellow {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    width: 68px; height: 68px;
+    border-radius: 50%;
+    background: orange;
+}
+.circlegreen {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    width: 68px; height: 68px;
+    border-radius: 50%;
+    background: green;
+}
+.sport_icons {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    width: 68px; 
+    height: 68px;
+}
 

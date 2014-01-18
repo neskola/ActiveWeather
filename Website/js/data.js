@@ -40,3 +40,13 @@ function WeatherDataCtrl($scope, $http) {
 	alert(JSON.stringify($scope.entries));*/
 };
 
+function AirportDataCtrl($scope, $http) {
+
+    $scope.entries = [
+        {code: '1', city: 'Istanbul', name: 'ist'},
+        {code: '2', city: 'London', name: 'lon'},
+        {code: '3', city: 'Paris', name: 'par'}
+    ];
+
+}
+
