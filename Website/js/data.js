@@ -7,30 +7,36 @@ function CalendarDataCtrl($scope) {
 
 };
 
-function WeatherDataCtrl($scope) {
+function WeatherDataCtrl($scope, $http) {
 
-	var place = 'Helsinki';
+    var place = 'Helsinki';
+    $scope.entries = [];
 
-	$.ajax({
+    $scope.entries = [];
+
+    $http.get('./python/' + place + '.json')
+      .then(function (result) {
+          $scope.entries = result.data;
+          alert(JSON.stringify($scope.entries));
+      });
+
+    alert(JSON.stringify($scope.entries));
+/*	$.ajax({
 		type: "GET",
-		url: "http://data.fmi.fi/fmi-apikey/8a861995-5bad-4fea-85e8-7cccd6860bb2/wfs?request=getFeature&storedquery_id=fmi::forecast::hirlam::surface::point::multipointcoverage&place=helsinki",
-		dataType: "xml",
-		success: function(xml) {
+		url: "./python/" + place + ".json",
+		dataType: "json",
+		success: function(data) {
 			$("<div class='alert alert-success alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Ok!</strong> Weather data refresh was succesfull</div>").appendTo("#status");
-			// get data from xml file
+			$scope.entries = data;
+			alert(JSON.stringify($scope.entries));
 		},
-		error: function(xml) {
+		error: function(data) {
 			$("<div class='alert alert-warning alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Warning!</strong> Weather data refresh was NOT succesfull</div>").appendTo("#status");
-			// failed
+		    // failed
+			alert(JSON.stringify($scope.entries));
 		}
 	});
 	
-	$scope.entries = [
-	{text:"cloudy", temp:'5'},
-	{text:"sunny", temp:'3'},
-	{text:"rainy", temp:'4'}];
-	
-	
-
+	alert(JSON.stringify($scope.entries));*/
 };
 
