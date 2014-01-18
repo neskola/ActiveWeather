@@ -76,5 +76,17 @@
         Update Calendar
     </button>
 
+    <div ng-init="airports = [
+  {code:'1', city:'Istanbul2', name:'ist'},
+  {code:'2', city:'London', name:'lon'},
+  {code:'3', city:'Paris', name:'par'}
+]">
+
+        <ul>
+            <li ng-repeat-start="airport in airports">{{airport.code}}</li>
+            <li>{{airport.city}}</li>
+            <li ng-repeat-end>{{airport.name}}</li>
+        </ul>
+    </div>
 </body>
 </html>
