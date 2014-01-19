@@ -77,17 +77,30 @@
     </button>
     </div>
 
-    <div ng-init="airports = [
-  {code:'1', city:'Istanbul2', name:'ist'},
-  {code:'2', city:'London', name:'lon'},
-  {code:'3', city:'Paris', name:'par'}
-]">
-
+    <br />
+    <br />
+    <div ng-controller="AirportDataCtrl">
         <ul>
-            <li ng-repeat-start="airport in airports">{{airport.code}}</li>
-            <li>{{airport.city}}</li>
-            <li ng-repeat-end>{{airport.name}}</li>
+            <li ng-repeat="entry in entries">{{entry.city}}, {{entry.code}}</li>
         </ul>
     </div>
+    <br />
+    <br />
+    <div>
+        <div class="circlered">
+            <img src="img/runner_icon_68x68.png" class="sport_icons" alt="runner">
+        </div>
+    </div>
+    <div>
+        <div class="circleyellow">
+            <img src="img/runner_icon_68x68.png" class="sport_icons" alt="runner">
+        </div>
+    </div>
+    <div>
+        <div class="circlegreen">
+            <img src="img/runner_icon_68x68.png" class="sport_icons" alt="runner">
+        </div>
+    </div>
+
 </body>
 </html>
