@@ -19,13 +19,14 @@ function WeatherDataCtrl($scope, $http) {
         async: false,
         success: function (data) {
             $("<div class='alert alert-success alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Ok!</strong> Weather data refresh was succesfull</div>").appendTo("#status");
-            $scope.entries = data;
-            alert(JSON.stringify($scope.entries));
+            $scope.entries = JSON.toString(data);            
         },
         error: function (data) {
             $("<div class='alert alert-warning alert-dismissable'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>Warning!</strong> Weather data refresh was NOT succesfull</div>").appendTo("#status");                        
         }
     });
+    
+    alert($scope.entries);
     
 /*	$.ajax({
 		type: "GET",
