@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 # namespaces
 gml_namespace = "{http://www.opengis.net/gml/3.2}"
 wml2_namespace = "{http://www.opengis.net/waterml/2.0}"
+target_namespace = "{http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95}"
 
 # some static values
 api_key = "8a861995-5bad-4fea-85e8-7cccd6860bb2"
@@ -65,10 +66,17 @@ def calculateEndtime():
 	return datetime(tmp_date.year, tmp_date.month, tmp_date.day, tmp_date.hour, 0,0)
 	
 def parseXMLtoJSON(xml_root):		
+	global place
 	
 	beginPosition = xml_root.find('.//{0}beginPosition'.format(gml_namespace))
 	endPosition = xml_root.find('.//{0}endPosition'.format(gml_namespace))
+	geoid = xml_root.find('.//{0}identifier'.format(gml_namespace))
+	gmlpos = xml_root.find('.//{0}pos'.format(gml_namespace))
+	timezone = xml_root.find('.//{0}timezone'.format(target_namespace))
+	country = xml_root.find('.//{0}country'.format(target_namespace))
+	region = xml_root.find('.//{0}region'.format(target_namespace))
 	print ("Report dates:" + beginPosition.text, "to " + endPosition.text)
+	print ("Place: " + place, " geoid: " + geoid.text, " gml pos: " + gmlpos.text)
 	
 	#print(xml_root.find(".//{0}MeasurementTimeseries[@id='mts-1-1-Temperature']".format(wml2_namespace))) doesn't work. again something wierd in syntax
 	measurements = xml_root.findall(".//{0}MeasurementTimeseries".format(wml2_namespace))
@@ -87,15 +95,28 @@ def parseXMLtoJSON(xml_root):
 			printMeasurementTVPs(measurement, "ccvr")
 		if m_id == 'mts-1-1-PrecipitationAmount':
 			printMeasurementTVPs(measurement, "prct")
-			
-	print (json.dumps(weather_table, sort_keys=True, indent=4, separators=(',', ': '))) # pretty print json
+				
+	root = dict()
+	root['place'] = place
+	root['geoid'] = geoid.text
+	root['gml_pos'] = gmlpos.text
+	root['timezone'] = timezone.text
+	root['region'] = region.text
+	root['country'] = country.text
+	root['data'] = weather_table
+	
+	with open(place + '.json', 'w') as outfile:
+		json.dump(root, outfile, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
+	outfile.close()
+	
+	#print (json_data, file = place + '.json') # pretty print json	
 
 def printMeasurementTVPs(measurement, type):	
 	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
 	for tvp in tvps:
 		time = tvp.find("./{0}time".format(wml2_namespace))
 		value = tvp.find("./{0}value".format(wml2_namespace))
-		print (type, time.text, value.text)
+		#print (type, time.text, value.text)
 		if time.text in weather_table:
 			value_table = weather_table[time.text]						
 			value_table[type] = value.text
