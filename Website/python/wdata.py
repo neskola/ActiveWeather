@@ -1,7 +1,7 @@
 #!C:\Python33\python.exe -u
 #!/usr/bin/env python
 
-import sys, getopt
+import sys, getopt, json
 import urllib.request
 import xml.etree.ElementTree as ET
 import time
@@ -21,7 +21,8 @@ timestep = 60
 weather_table = dict()
 
 def main(argv):
-
+	global place, geoid
+	
 	inputfile = ""
 	try:
 		opts, args = getopt.getopt(argv,"hf:p:g:", ["file=", "place=", "geoid="])
@@ -55,8 +56,7 @@ def main(argv):
 	else:
 		print("Reading xml file: " + inputfile)
 		xml_root = ET.parse(inputfile)
-				
-		
+					
 	parseXMLtoJSON(xml_root)
 
 def calculateEndtime():
@@ -64,7 +64,8 @@ def calculateEndtime():
 	tmp_date = tmp_date + timedelta(hours=48)	
 	return datetime(tmp_date.year, tmp_date.month, tmp_date.day, tmp_date.hour, 0,0)
 	
-def parseXMLtoJSON(xml_root):	
+def parseXMLtoJSON(xml_root):		
+	
 	beginPosition = xml_root.find('.//{0}beginPosition'.format(gml_namespace))
 	endPosition = xml_root.find('.//{0}endPosition'.format(gml_namespace))
 	print ("Report dates:" + beginPosition.text, "to " + endPosition.text)
@@ -75,34 +76,33 @@ def parseXMLtoJSON(xml_root):
 		m_id = measurement.get('{0}id'.format(gml_namespace))		
 		# list which values will be included in an array variable - or better one: make a json mapping
 		if m_id == 'mts-1-1-Temperature':
-			printMeasurementTVPs(measurement, "temperature   :")
+			printMeasurementTVPs(measurement, "temp")
 		if m_id == 'mts-1-1-Humidity':
-			printMeasurementTVPs(measurement, "humidity     %:")
+			printMeasurementTVPs(measurement, "humi")
 		if m_id == 'mts-1-1-WindSpeedMS':
-			printMeasurementTVPs(measurement, "wind spd   m/s:")
+			printMeasurementTVPs(measurement, "wspd")
 		if m_id == 'mts-1-1-WindDirection':
-			printMeasurementTVPs(measurement, "wind direction:")
+			printMeasurementTVPs(measurement, "wdir")
 		if m_id == 'mts-1-1-TotalCloudCover':
-			printMeasurementTVPs(measurement, "cloud cover  %:")
+			printMeasurementTVPs(measurement, "ccvr")
 		if m_id == 'mts-1-1-PrecipitationAmount':
-			printMeasurementTVPs(measurement, "precipitation :")
-		
-	for item in weather_table.items():
-		print(item) # we are almost there :)
+			printMeasurementTVPs(measurement, "prct")
+			
+	print (json.dumps(weather_table, sort_keys=True, indent=4, separators=(',', ': '))) # pretty print json
 
-def printMeasurementTVPs(measurement, type):
+def printMeasurementTVPs(measurement, type):	
 	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
 	for tvp in tvps:
 		time = tvp.find("./{0}time".format(wml2_namespace))
 		value = tvp.find("./{0}value".format(wml2_namespace))
 		print (type, time.text, value.text)
 		if time.text in weather_table:
-			value_table = weather_table[time.text]
-			value_table['date'] = time.text
+			value_table = weather_table[time.text]						
 			value_table[type] = value.text
-		else:
-			value_table = dict(type=value.text)
-			weather_table[time.text] = value_table	
-					
+		else:			
+			value_table = dict()
+			value_table[type] = value.text
+			weather_table[time.text] = value_table		
+	
 if __name__ == "__main__":
 	main(sys.argv[1:])
