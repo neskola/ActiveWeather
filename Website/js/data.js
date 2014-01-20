@@ -27,6 +27,11 @@ function WeatherDataCtrl($scope, $http) {
     console.log($scope.data);    
 };
 
+function ProfileDataCtrl($scope, $http) {
+    var profile = { name: 'Teemu Testaaja', email : 'teemu.testaaja@gmail.com', default_place : 'Helsinki' };    
+    $scope.profile = profile;    
+}
+
 function AirportDataCtrl($scope, $http) {
 
     $scope.entries = [
