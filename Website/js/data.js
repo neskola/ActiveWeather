@@ -9,8 +9,6 @@ function CalendarDataCtrl($scope) {
 
 function WeatherDataCtrl($scope, $http) {
 
-    var place = 'Helsinki';    
-
     $scope.entries = [];
 
     $.ajax({
