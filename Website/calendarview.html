@@ -36,18 +36,26 @@
 	<h1>Calendar and weather view</h1>
 	<p class="lead">Simple view for calendar and weather data integration test.</p>
   </div>
-  <div class="alert alert-warning alert-dismissable">
+  <!-- <div class="alert alert-warning alert-dismissable">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <strong>Warning!</strong> Contents are fixed and for testing purposes only.
-  </div>
+  </div> -->
   
-  <div class="row well" ng-controller="CalendarDataCtrl">
+  <!-- <div class="row well" ng-controller="CalendarDataCtrl">
      <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}} <span class="badge">{{entry.min}}</span></div>
-  </div>
+  </div> -->
 
-  <div class="row well" ng-controller="WeatherDataCtrl">
-	 <div id="status"></div>            
-     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.place}} <span class="badge">{{entry.data}}</span></div>
+  <div class="row" ng-controller="WeatherDataCtrl">
+	 <div id="status"></div>     
+     <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">
+         <div>{{entry.place}}<span class="badge">{{entry.geoid}}</span></div>
+         <div class="row">
+             <div ng-repeat="data in entry.data" class="col-sm-4  well" title="Tooltip text">
+                 <div>
+                     {{data.date | date:'dd-MM' }}<span class="badge">{{data.temp}}</span>
+                 </div>
+             </div>
+         </div>
   </div>
   
 </div>
