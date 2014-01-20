@@ -1,4 +1,4 @@
-﻿function loadPage(html, arg) {    
+﻿function loadPage(html, arg) {
     $.ajax({
         url: html + " #container",
     }).done(function (data) {
