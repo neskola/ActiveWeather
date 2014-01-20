@@ -105,9 +105,11 @@ def parseXMLtoJSON(xml_root):
 	root['country'] = country.text
 		
 	dictlist = []
-	for key, value in weather_table.items():
-		temp = value		
-		dictlist.append(temp)
+		
+	for value in sorted(weather_table.items()):		
+		key = value[0]
+		print(key)
+		dictlist.append(weather_table.get(key))
 	
 	root['data'] = dictlist;
 	
