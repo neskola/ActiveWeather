@@ -118,7 +118,7 @@ def parseXMLtoJSON(xml_root):
 	outfile.close()
 	
 	#print (json_data, file = place + '.json') # pretty print json	
-
+	
 def printMeasurementTVPs(measurement, type):	
 	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
 	for tvp in tvps:

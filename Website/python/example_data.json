@@ -1,0 +1,43 @@
+{
+	"observations" : [
+    { 
+		"geoid": "658225",
+		"gml_pos": "60.16950 24.93540 ",
+		"place": "Helsinki",
+		"timestep" : "360"
+	},
+	{ 
+	    "geoid": "660561",
+		"gml_pos": "60.39230 25.66510 ",
+		"place": "Porvoo",
+		"timestep" : "360"
+	}	
+	],
+	
+	"profiles" : [
+    { 
+		"name": "Teemu Testaaja",
+		"email": "teemu.testaaja@gmail.com",
+		"default_place": "Helsinki",
+		"activities" : [
+		{ 
+			"activity_id" : "001",
+			"activity_name" : "Running",
+			"activity_img" : "/img/runner_icon_68x68.png"
+		}
+		]
+	},
+	{ 
+		"name": "Niki Eskola",
+		"email": "neskola@gmail.com",
+		"default_place": "Porvoo",
+		"activities" : [
+		{ 
+			"activity_id" : "001",
+			"activity_name" : "Running",
+			"activity_img" : "/img/runner_icon_68x68.png"			
+		}
+		]
+	}
+	]
+}
