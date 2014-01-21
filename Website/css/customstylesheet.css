@@ -10,7 +10,7 @@
     left: 0px;
     top: 0px;
     margin: 0;
-    width: 68px; height: 68px;
+    width: 45px; height: 45px;
     border-radius: 50%;
     background: red;
 }
@@ -19,7 +19,7 @@
     left: 0px;
     top: 0px;
     margin: 0;
-    width: 68px; height: 68px;
+    width: 45px; height: 45px;
     border-radius: 50%;
     background: orange;
 }
@@ -28,7 +28,7 @@
     left: 0px;
     top: 0px;
     margin: 0;
-    width: 68px; height: 68px;
+    width: 45px; height: 45px;
     border-radius: 50%;
     background: green;
 }
@@ -37,8 +37,8 @@
     left: 0px;
     top: 0px;
     margin: 0;
-    width: 68px; 
-    height: 68px;
+    width: 45px; 
+    height: 45px;
     opacity: 0.50;    
 }
 
