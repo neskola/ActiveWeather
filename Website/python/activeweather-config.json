@@ -1,0 +1,32 @@
+{
+  "profiles" : [ {
+    "default_place" : "Helsinki",
+    "name" : "Teemu Testaaja",
+    "email" : "teemu.testaaja@gmail.com",
+    "activities" : [ {
+      "activity_name" : "Running",
+      "activity_id" : "001",
+      "activity_img" : "/img/runner_icon_68x68.png"
+    } ]
+  }, {
+    "default_place" : "Porvoo",
+    "name" : "Niki Eskola",
+    "email" : "neskola@gmail.com",
+    "activities" : [ {
+      "activity_name" : "Running",
+      "activity_id" : "001",
+      "activity_img" : "/img/runner_icon_68x68.png"
+    } ]
+  } ],
+  "observations" : [ {
+    "geoid" : "658225",
+    "gml_pos" : "60.16950 24.93540 ",
+    "timestep" : "360",
+    "place" : "Helsinki"
+  }, {
+    "geoid" : "660561",
+    "gml_pos" : "60.39230 25.66510 ",
+    "timestep" : "360",
+    "place" : "Porvoo"
+  } ]
+}
