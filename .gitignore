@@ -214,5 +214,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-python/*.json
-!python/activeweather-config.json
+*/python/*.json
+!*/python/activeweather-config.json
