@@ -103,14 +103,22 @@ def parseXMLtoJSON(xml_root):
 	root['timezone'] = timezone.text
 	root['region'] = region.text
 	root['country'] = country.text
-	root['data'] = weather_table
+		
+	dictlist = []
+		
+	for value in sorted(weather_table.items()):		
+		key = value[0]
+		#print(key)
+		dictlist.append(weather_table.get(key))
+	
+	root['data'] = dictlist;
 	
 	with open(place + '.json', 'w') as outfile:
 		json.dump(root, outfile, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
 	outfile.close()
 	
 	#print (json_data, file = place + '.json') # pretty print json	
-
+	
 def printMeasurementTVPs(measurement, type):	
 	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
 	for tvp in tvps:
@@ -123,6 +131,7 @@ def printMeasurementTVPs(measurement, type):
 		else:			
 			value_table = dict()
 			value_table[type] = value.text
+			value_table['date'] = time.text			
 			weather_table[time.text] = value_table		
 	
 if __name__ == "__main__":
