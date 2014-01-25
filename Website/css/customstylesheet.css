@@ -1,4 +1,4 @@
-   
+﻿   
 #temperatureslider {
     width: 400px;
 }
@@ -42,8 +42,12 @@
 }
 
 .date-number {
-    position: relative;
-    font-family: 'Freckle Face', cursive;
-    font-size: 72px;
+    position:relative;
+    left:-80px;
+    top:-15px;
+    z-index: 0;    
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 90px;
     opacity: 0.10;
 }
