@@ -1,39 +1,30 @@
-﻿   
+   
 #temperatureslider {
     width: 400px;
 }
 #temperaturediv, #selectdays, #selectdaytext, #selecttemperaturetext, #updatecalendarbtn {
     margin-left: 20px;
 }
-.circlered {
-    position: relative;
+.circle {
+    float: left;
     left: 0px;
     top: 0px;
-    margin: 0;
+    margin: 0 10px 0 0;
     width: 45px; height: 45px;
     border-radius: 50%;
+}
+
+.circlered {
     background: red;
 }
+
 .circleyellow {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    margin: 0;
-    width: 45px; height: 45px;
-    border-radius: 50%;
     background: orange;
 }
 .circlegreen {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    margin: 0;
-    width: 45px; height: 45px;
-    border-radius: 50%;
     background: green;
 }
 .sport_icons {
-    position: relative;
     left: 0px;
     top: 0px;
     margin: 0;
