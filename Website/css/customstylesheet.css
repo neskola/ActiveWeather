@@ -33,3 +33,10 @@
     opacity: 0.50;    
 }
 
+.margin-right-10px {
+    margin-right: 10px;    
+}
+
+#temperaturediv {
+    margin-bottom: 20px;
+}
