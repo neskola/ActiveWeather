@@ -40,3 +40,10 @@
 #temperaturediv {
     margin-bottom: 20px;
 }
+
+.date-number {
+    position: relative;
+    font-family: 'Freckle Face', cursive;
+    font-size: 72px;
+    opacity: 0.10;
+}
