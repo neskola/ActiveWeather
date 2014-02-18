@@ -7,12 +7,12 @@ import StringIO
 # for testing only
 def main(): 
 
-	str = { "this is a test" }
+	json = '{ "text" : "this is a test - another python test" }'
 
 	print getBatchControllerData("https://activeweather.firebaseIO.com");
 	print getProfileData("https://activeweather.firebaseIO.com");
 
-	curlPut("https://activeweather.firebaseIO.com/test", str)
+	curlPut("https://activeweather.firebaseIO.com/test.json", json)
 
 # Firebase API functions, no fancy realtime stuff just plain PUSH / GET functions
 
@@ -41,13 +41,12 @@ def curlQuery(url):
 	return ret
 
 def curlPut(url, data):
-	b = StringIO.StringIO(data)
 
 	c = pycurl.Curl();
 	c.setopt(pycurl.URL, url)
-	c.setopt(pycurl.HTTPHEADER, ["Accept:"])
-	c.setopt(pycurl.HTTPPOST, data)
+	c.setopt(pycurl.HTTPHEADER, ["Accept:application/json"])
 	c.setopt(pycurl.CUSTOMREQUEST, "PUT")
+	c.setopt(pycurl.POSTFIELDS, data)
 	c.setopt(pycurl.SSL_VERIFYPEER, 0)   
 	c.setopt(pycurl.SSL_VERIFYHOST, 0)
 	c.perform()
