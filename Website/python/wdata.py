@@ -2,9 +2,10 @@
 #!/usr/bin/env python
 
 import sys, getopt, json
-import urllib.request
+import curl
 import xml.etree.ElementTree as ET
 import time
+import firebase
 from datetime import datetime, timedelta
 
 # namespaces
@@ -50,9 +51,7 @@ def main(argv):
 
 	if inputfile == '':	
 		print("Connecting to: " + complete_query);
-		response = urllib.request.urlopen("http://data.fmi.fi" + complete_query)
-		print (response.status, response.reason)
-		xml = response.read()
+		xml = firebase.curlQuery("http://data.fmi.fi" + complete_query)
 		xml_root = ET.fromstring(xml)
 	else:
 		print("Reading xml file: " + inputfile)
@@ -116,6 +115,8 @@ def parseXMLtoJSON(xml_root):
 	with open(place + '.json', 'w') as outfile:
 		json.dump(root, outfile, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
 	outfile.close()
+
+	firebase.curlPut("https://activeweather.firebaseIO.com/observations/observation/" + geoid.text + ".json", json.dumps(root))	
 	
 	#print (json_data, file = place + '.json') # pretty print json	
 	

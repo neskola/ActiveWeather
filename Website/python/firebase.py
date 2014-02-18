@@ -14,6 +14,8 @@ def main():
 
 	curlPut("https://activeweather.firebaseIO.com/test.json", json)
 
+	print "\n"
+
 # Firebase API functions, no fancy realtime stuff just plain PUSH / GET functions
 
 # get batch controller data, such as places, timevalues etc for update batch jobs
