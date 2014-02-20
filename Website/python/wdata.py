@@ -111,7 +111,7 @@ def parseXMLtoJSON(xml_root):
 			printMeasurementTVPs(measurement, "prct")
 				
 	root = dict()
-	root['place'] = place
+	#root['place'] = place
 	root['geoid'] = geoid.text
 	root['gml_pos'] = gmlpos.text
 	root['timezone'] = timezone.text
