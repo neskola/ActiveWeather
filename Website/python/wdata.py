@@ -15,15 +15,15 @@ target_namespace = "{http://xml.fmi.fi/namespace/om/atmosphericfeatures/0.95}"
 
 # some static values
 api_key = "8a861995-5bad-4fea-85e8-7cccd6860bb2"
-query = "/wfs?request=getFeature&storedquery_id=fmi::forecast::hirlam::surface::point::timevaluepair&place="
-place = "Porvoo"
+query = "/wfs?request=getFeature&storedquery_id=fmi::forecast::hirlam::surface::point::timevaluepair&"
+place = ''
 geoid = ''
 timestep = 60
 
 weather_table = dict()
 
 def main(argv):
-	global place, geoid
+	global place, geoid, inputfile
 	
 	inputfile = ""
 	try:
@@ -42,16 +42,31 @@ def main(argv):
 			place = arg
 			print ("Using " + place + " as place parameter.")
 		elif opt in ("-g", "--geoid"):
-			goeid = arg
+			geoid = arg
 			print ("Using " + geoid + " as geoid parameter.")
-	
+
 	end_time = calculateEndtime()
 
-	complete_query = "/fmi-apikey/" + api_key + query + place + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ")
+	if place == '' and geoid == '':
+		geoidlist = firebase.getGEOIDList()
+		for geoid in geoidlist:
+			print geoid
+			makeQuery("/fmi-apikey/" + api_key + query + "geoid=" + str(geoid) + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ"))
+
+	elif geoid != '':
+		# use geoid
+		complete_query = "/fmi-apikey/" + api_key + query + "geoid=" + geoid + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ")
+		makeQuery(complete_query)
+	elif place != '':
+		complete_query = "/fmi-apikey/" + api_key + query + "place=" + place + "&timestep=" + str(timestep) + "&endtime" + end_time.strftime("%Y-%m-%dT%H:%S:%MZ")
+		makeQuery(complete_query)
+
+	
+def makeQuery(query):
 
 	if inputfile == '':	
-		print("Connecting to: " + complete_query);
-		xml = firebase.curlQuery("http://data.fmi.fi" + complete_query)
+		print("Connecting to: " + query);
+		xml = firebase.curlQuery("http://data.fmi.fi" + query)
 		xml_root = ET.fromstring(xml)
 	else:
 		print("Reading xml file: " + inputfile)
@@ -77,14 +92,14 @@ def parseXMLtoJSON(xml_root):
 	print ("Report dates:" + beginPosition.text, "to " + endPosition.text)
 	print ("Place: " + place, " geoid: " + geoid.text, " gml pos: " + gmlpos.text)
 	
-	#print(xml_root.find(".//{0}MeasurementTimeseries[@id='mts-1-1-Temperature']".format(wml2_namespace))) doesn't work. again something wierd in syntax
+
 	measurements = xml_root.findall(".//{0}MeasurementTimeseries".format(wml2_namespace))
-	for measurement in measurements:		
+	for measurement in measurements:
 		m_id = measurement.get('{0}id'.format(gml_namespace))		
 		# list which values will be included in an array variable - or better one: make a json mapping
 		if m_id == 'mts-1-1-Temperature':
 			printMeasurementTVPs(measurement, "temp")
-		if m_id == 'mts-1-1-Humidity':
+		if m_id == 'mts-1-1-humidity':
 			printMeasurementTVPs(measurement, "humi")
 		if m_id == 'mts-1-1-WindSpeedMS':
 			printMeasurementTVPs(measurement, "wspd")
@@ -92,7 +107,7 @@ def parseXMLtoJSON(xml_root):
 			printMeasurementTVPs(measurement, "wdir")
 		if m_id == 'mts-1-1-TotalCloudCover':
 			printMeasurementTVPs(measurement, "ccvr")
-		if m_id == 'mts-1-1-PrecipitationAmount':
+		if m_id == 'mts-1-1-precipitationamount':
 			printMeasurementTVPs(measurement, "prct")
 				
 	root = dict()

@@ -7,12 +7,12 @@ import StringIO
 # for testing only
 def main(): 
 
-	json = '{ "text" : "this is a test - another python test" }'
+#	json = '{ "text" : "this is a test - another python test" }'
 
-	print getBatchControllerData("https://activeweather.firebaseIO.com");
-	print getProfileData("https://activeweather.firebaseIO.com");
+	print getGEOIDList()
+#	print getProfileData("https://activeweather.firebaseIO.com");
 
-	curlPut("https://activeweather.firebaseIO.com/test.json", json)
+#	curlPut("https://activeweather.firebaseIO.com/test.json", json)
 
 	print "\n"
 
@@ -20,12 +20,20 @@ def main():
 
 # get batch controller data, such as places, timevalues etc for update batch jobs
 def getBatchControllerData(firebase_url):
-	return curlQuery(firebase_url + "/observations.json")
+	return curlQuery(firebase_url + "/observations/observation.json")
 
 def getProfileData(firebase_url):
 	return curlQuery(firebase_url + "/profiles.json")
 
+def getGEOIDList():
+	datalist = json.loads(getBatchControllerData("https://activeweather.firebaseIO.com"))
+	geoidlist = []
+	for data in datalist:
+		geoidlist.append(data)
+	return geoidlist
+
 def curlQuery(url):
+	
 	b = StringIO.StringIO()
 
 	print "Using curl. Query=" + url
