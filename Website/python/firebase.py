@@ -61,6 +61,18 @@ def curlPut(url, data):
 	c.setopt(pycurl.SSL_VERIFYHOST, 0)
 	c.perform()
 
+def curlDelete(url):
+
+	c = pycurl.Curl();
+	c.setopt(pycurl.URL, url)
+	c.setopt(pycurl.HTTPHEADER, ["Accept:application/json"])
+	c.setopt(pycurl.CUSTOMREQUEST, "DELETE")
+#	c.setopt(pycurl.POSTFIELDS, data)
+	c.setopt(pycurl.SSL_VERIFYPEER, 0)   
+	c.setopt(pycurl.SSL_VERIFYHOST, 0)
+	c.perform()
+
+
 #def curlPost(url):
 
 #def curlDelete(url):
