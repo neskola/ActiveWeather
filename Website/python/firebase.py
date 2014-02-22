@@ -5,16 +5,32 @@ import pycurl
 import StringIO
 
 # for testing only
-def main(): 
+def main(argv): 
 
-#	json = '{ "text" : "this is a test - another python test" }'
+	global url, inputfile
+	
+	inputfile = ""
+	try:
+		opts, args = getopt.getopt(argv,"hf:u:", ["file=", "url="])
+	except getopt.GetoptError:
+		print ("firebase.py -f|--file <json file> -u|--url <firebase url>")
+		sys.exit(2)
+	for opt, arg in opts:
+		if opt == '-h':
+			print ("firebase.py -f|--file <json file> -u|--url <firebase url>")
+			sys.exit()
+		elif opt in ("-f", "--file"):			
+			inputfile = arg
+			print ("Using " + inputfile + " as input file.")
+		elif opt in ("-u", "--url"):			
+			url = arg
 
-	print getGEOIDList()
-#	print getProfileData("https://activeweather.firebaseIO.com");
-
-#	curlPut("https://activeweather.firebaseIO.com/test.json", json)
-
-	print "\n"
+	if inputfile != '' and url != '':
+		jsonfile = open(inputfile)
+		jsondata = json.load(jsonfile)
+		print json.dumps(jsondata)
+		jsonfile.close()
+		curlPut(url, json.dumps(jsondata))
 
 # Firebase API functions, no fancy realtime stuff just plain PUSH / GET functions
 
@@ -89,4 +105,4 @@ def setupCurl():
 #def pushJSONtoFirebase(json, firebase_url):
 
 if __name__ == "__main__":
-	main()
+	main(sys.argv[1:])
