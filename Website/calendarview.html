@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS files -->
-
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    
+
     <!-- Optional theme -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> 
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link href="bootstrap/dist/css/bootstrap-slider.min.css" rel="stylesheet">
-    
+
     <!--Custom Stylesheet-->
     <link href="css/customstylesheet.css" rel="stylesheet">
 
     <!-- Javascript files -->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type='text/javascript' src="http://code.jquery.com/jquery-2.1.0.min.js"></script>        
+    <script type='text/javascript' src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
     <!-- Bootstrap 3.1.1 -->
     <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -34,34 +32,29 @@
     <!-- local scripts -->
     <script type='text/javascript' src="js/auth.js"></script>
     <script type='text/javascript' src="js/page.js"></script>
-    <script type='text/javascript' src="js/data.js"></script>    
+    <script type='text/javascript' src="js/data.js"></script>
 
 </head>
 <body>
-  <div class="container" id="container">
+    <div class="container" id="container">
 
-  <div class="page-header">
-        <h1>Calendar and weather view</h1>
-        <p class="lead">Simple view for calendar and weather data integration test.</p>
-    </div>
-    <div class="row" ng-controller="GeoidCtrl">
-        <div class="col-sm-6" id="geoidSelect">            
-            <div>
-                <!-- div ng-repeat="meta in metadata">{{meta.region}}</!--div -->
-                <div class="input-group">
-                    <select id="geoid_select" class="selectpicker form-control" data-style="btn-primary" ng-model="region" ng-options="meta.region for meta in metadata | toArray" onchange="loadPage('calendarview.html'); window.place = $('#geoid_select option:selected').text();"></select><br>
+        <div class="page-header">
+            <h1>Calendar and weather view</h1>
+            <p class="lead">Simple view for calendar and weather data integration test.</p>
+        </div>
+        <div class="row" ng-controller="GeoidCtrl">
+            <div class="col-sm-12" id="geoidSelect">
+                <div>
+                    <!-- div ng-repeat="meta in metadata">{{meta.region}}</!--div -->
+                    <div class="input-group">
+                        <select id="geoid_select" class="selectpicker form-control" data-style="btn-primary" ng-model="region" ng-options="meta.region for meta in metadata | toArray" ng-change="selectedGeoid()"></select><br>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="row" ng-controller="WeatherDataCtrl">
-        <div id="status"></div>
-        <div ng-repeat="entry in entries" class="col-sm-12" title="Tooltip text">
-            <div>
-                <span class="badge">{{entry.place}}</span>
-                <div class="row">
-                    <div ng-repeat="data in entry.data" class="col-sm-4  well" title="Tooltip text">
+            <div id="status"></div>
+            <div ng-repeat="observation in observations" class="col-sm-12" title="Tooltip text">
+                <div>
+                    <div ng-repeat="data in observation" class="col-sm-4  well" title="Tooltip text">
                         <div>
                             {{data.date | date:'dd-MM HH:MM' }}
                         </div>
@@ -71,9 +64,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    </div>
 </body>
 </html>
