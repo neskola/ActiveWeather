@@ -111,12 +111,19 @@ def parseXMLtoJSON(xml_root):
 			printMeasurementTVPs(measurement, "prct")
 				
 	root = dict()
+	meta = dict()
 	#root['place'] = place
 	root['geoid'] = geoid.text
 	root['gml_pos'] = gmlpos.text
 	root['timezone'] = timezone.text
 	root['region'] = region.text
 	root['country'] = country.text
+	meta['geoid'] = geoid.text
+	meta['gml_pos'] = gmlpos.text
+	meta['region'] = region.text
+	meta['timezone'] = timezone.text
+	meta['country'] = country.text
+	meta['lastupdate'] = datetime.today().strftime("%Y-%m-%dT%H:%S:%MZ")
 		
 	dictlist = []
 		
@@ -131,12 +138,13 @@ def parseXMLtoJSON(xml_root):
 		json.dump(root, outfile, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
 	outfile.close()
 
-	firebase.curlPut("https://activeweather.firebaseIO.com/observations/observation/" + geoid.text + ".json", json.dumps(root))	
+	firebase.curlPut("https://activeweather.firebaseIO.com/observations/data/" + geoid.text + ".json", json.dumps(root))	
+	firebase.curlPut("https://activeweather.firebaseIO.com/observations/meta/" + geoid.text + ".json", json.dumps(meta))		
 	
 	#print (json_data, file = place + '.json') # pretty print json	
 	
 def printMeasurementTVPs(measurement, type):	
-	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair						
+	tvps = measurement.findall("./{0}point/{0}MeasurementTVP".format(wml2_namespace)) # TPV = time value pair
 	for tvp in tvps:
 		time = tvp.find("./{0}time".format(wml2_namespace))
 		value = tvp.find("./{0}value".format(wml2_namespace))

@@ -37,7 +37,7 @@ def main(argv):
 			url = arg
 		if opt in ("-b"):
 			operation = __BACKUP
-		if opt in ("-p"):
+		if opt in ("-u"):
 			operation = __PUSH
 		if opt in ("-z"):
 			operation = __BACKUP_AND_ZIP
