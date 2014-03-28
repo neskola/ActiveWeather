@@ -3,51 +3,49 @@
 <head>
     <title>Calendar & Weather view Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS files -->
+
     <!-- Bootstrap -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> 
     <link href="bootstrap/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+    
     <!--Custom Stylesheet-->
     <link href="css/customstylesheet.css" rel="stylesheet">
 
+    <!-- Javascript files -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/angular-1.2.6.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>        
+
+    <!-- Bootstrap 3.1.1 -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Firebase, Angular and AngularFire -->
+    <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.3/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
 
     <!-- local scripts -->
-    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src="bootstrap/dist/js/bootstrap-slider.min.js"></script>
     <script type='text/javascript' src="js/page.js"></script>
-    <script type='text/javascript' src="js/data.js"></script>
-    <script type='text/javascript' src="js/slidertest.js"></script>
+    <script type='text/javascript' src="js/data.js"></script>    
 
 </head>
 <body>
-  <div class="container" id="container>
+  <div class="container" id="container">
 
   <div class="page-header">
         <h1>Calendar and weather view</h1>
         <p class="lead">Simple view for calendar and weather data integration test.</p>
     </div>
-    <!-- <div class="alert alert-warning alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <strong>Warning!</strong> Contents are fixed and for testing purposes only.
-    </div> -->
-    <!-- <div class="row well" ng-controller="CalendarDataCtrl">
-       <div ng-repeat="entry in entries" class="col-sm-4" title="Tooltip text">{{entry.text}} <span class="badge">{{entry.min}}</span></div>
-    </div> -->
     <div class="row" ng-controller="GeoidDataCtrl">
         <div class="col-sm-6" id="geoidSelect">            
             <div>
                 <div class="input-group">
-                    <!-- <span class="input-group-addon"> class="badge">{{data.temp}}</span> -->
                     <select id="geoid_select" class="selectpicker form-control" data-style="btn-primary" ng-model="place" ng-options="entry.place for entry in entries" onchange="loadPage('calendarview.html'); window.place = $('#geoid_select option:selected').text();"></select><br>
                 </div>
             </div>
@@ -72,6 +70,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 </body>
 </html>
