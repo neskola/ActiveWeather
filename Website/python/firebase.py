@@ -73,7 +73,7 @@ def main(argv):
 
 # get batch controller data, such as places, timevalues etc for update batch jobs
 def getBatchControllerData(firebase_url):
-	return curlQuery(firebase_url + "/observations/observation.json")
+	return curlQuery(firebase_url + "/observations/meta.json")
 
 def getProfileData(firebase_url):
 	return curlQuery(firebase_url + "/profiles.json")
