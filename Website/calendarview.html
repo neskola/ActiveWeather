@@ -65,6 +65,19 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-12" id="geoidQuery">                
+                    <!-- div ng-repeat="meta in metadata">{{meta.region}}</!--div -->                    
+                    <input ng-model="query" placeholder="filter regions.."/>                    
+                    <!-- div ng-repeat="meta in metadata">{{meta.region}}</!--div -->
+                    <ul class="example-animate-container">
+                        <li ng-repeat="meta in metadata | toArray | filter:query">
+                            {{meta.region}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 </html>

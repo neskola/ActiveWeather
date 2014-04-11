@@ -19,7 +19,7 @@ angular.module('activeweather', ['firebase'])
       var firebaseRef = firebaseSingleton.getInstance().getReference();
       var ref = firebaseRef.child("observations/meta");
       $scope.metadata = $firebase(ref);
-
+      
       $scope.region = null;
       $scope.observations = [];
 
